@@ -9,17 +9,19 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.onito.dto.MovieDTO2;
 import com.onito.dto.MovieDTO;
 import com.onito.dto.MovieDTO1;
+import com.onito.dto.MovieDTO2;
 import com.onito.model.Movie;
 import com.onito.service.CSVDataLoader;
 import com.onito.service.OnitoService;
 import com.opencsv.exceptions.CsvException;
 
 @RestController
+@RequestMapping("/api/v1")
 public class OnitoController {
 	
 	@Autowired
